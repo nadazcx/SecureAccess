@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe Card</title>
+    <!-- Add any CSS styles here -->
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .card-swipe {
+            font-size: 24px;
+            font-weight: bold;
+            color: blue;
+        }
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Swipe Your Card</h1>
+        <p class="card-swipe">Please swipe your card on the RFID reader</p>
+        <!-- Display error messages if any -->
+        {% if error_message %}
+            <p class="error-message">{{ error_message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
